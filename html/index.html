@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid d-flex" >
+			<div class="row">
+				<div class="col-8 col-sm-2">
+					<img src="../images/design/icons/ModaX Logo.png">
+				</div>
+				<nav class="col-sm-8 d-none d-sm-block ">
+					<ul class="d-none d-sm-flex">
+						<li>HOME</li>
+						<li>SHOP</li>
+						<li>PORTFOLIO</li>
+						<li>PAGE</li>
+						<li>BLOG</li>
+						<li>ELEMENTS</li>
+					</ul>
+				</nav>
+				<div class="col-4 col-sm-2">
+					<div class="row">
+						<div class="col-7 paddingZero">
+							<img src="../images/design/icons/Cart.png">
+							<span id="basket-circle">0</span>
+						</div>
+						<div class="col-5">
+							<img src="../images/design/icons/Search.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<article class="title-block container-fluid col-sm-12">
+			<span class="title row">Men's lifestyle clothing</span>
+			<ul class="col-sm-4 d-none d-sm-flex">
+				<li>Home</li>
+				<li>></li>
+				<li>Catalog</li>
+				<li>></li>
+				<li>Men</li>
+				<li>></li>
+				<li>Clothing</li>
+			</ul>
+		</article>
+		<main class="container col-container-fluid">
+			<section class="banners row">
+				<div class="banner1 col-sm-7 col-md-8 d-none d-sm-flex">
+					<div class="banner-child col-sm-7">
+						<div>
+							<span class="banner-lifestyle row">Lifestyle</span>
+							<span class="banner-big-text row">New Now: Striped cotton</span>
+						</div>
+						<button class="row">More Info</button>
+					</div>
+				</div>
+				<div class="banner2 col-sm-5 col-md-4">
+					<div class="banner-child col-7">
+						<div>
+							<span class="banner-lifestyle row">Lifestyle</span>
+							<span class="banner-big-text row">Fashion Collecttion</span>
+						</div>
+						<button class="row">More Info</button>
+					</div>
+				</div>
+			</section>
+			<section class="filters row">
+				<div class="filter-section d-block d-sm-none d-md-block col-8 col-md-2">
+					<span>FILTER</span>
+				</div>
+				<div class="filter-section paddingZero d-none d-md-block col-md-1">
+					<img src="../images/design/icons/filter-reset.png" id="rotate-filter">
+				</div>
+				<div class="filter-section d-none d-sm-block col-sm-4 col-md-3">
+					<span>SORT BY:</span>
+					<select>
+						<option>Price: $-$$</option>
+						<option>Price: $$-$</option>
+					</select>
+					
+				</div>
+				<div class="filter-section d-none d-sm-block col-sm-4 col-md-3">
+					<span>SHOW:</span>
+					<select>
+						<option>16</option>
+						<option>15</option>
+						<option>14</option>
+					</select>
+				</div>
+				<div class="filter-section view-style col-4 col-sm-4 col-md-3">
+					<div class="menu-style d-none d-sm-block col-sm-3">
+						<img src="../images/design/icons/grid-menu.png">
+					</div>
+					<div class="menu-style d-none d-sm-block col-sm-3">
+						<img src="../images/design/icons/list-menu.png">
+					</div>
+					<div class="view-all paddingZero col-12 col-sm-6">
+						<span>VIEW ALL</span>
+					</div>
+				</div>
+			</section>
+			<section class="row">
+				<section class="d-none d-sm-block col-sm-4 col-md-3 paddingZero">
+					<div class="additional-filters" id="categories-filter">
+						<div class="button-structure">
+							<div id="categories-button">
+								<img src="../images/design/icons/arrow-down.png" class="col-sm-3">
+								<span class="col-sm-8 paddingZero">CATEGORIES</span>
+							</div>
+							<span class="x-exit col-sm-1 paddingZero" id="exit1">x</span>
+						</div>
+						<div class="categories-list d-flex">
+							<div class="col-sm-2"></div>
+							<ul class="col-sm-7" >
+								<li>Lifestyle</li>
+								<li>Running</li>
+								<li>Training & Gym</li>
+								<li>Cloching</li>
+								<li>Scarves</li>
+								<li>Accesories</li>
+								<li>Shoes</li>
+								<li>Fragrance</li>
+								<li>Footbal</li>
+							</ul>
+							<ul class="col-sm-1" >
+								<li>C1</li>
+								<li>15</li>
+								<li>20</li>
+								<li>25</li>
+								<li>30</li>
+								<li>33</li>
+								<li>25</li>
+								<li>50</li>
+								<li>32</li>
+							</ul>
+						</div>
+					</div>
+					<div class="additional-filters" id="size-filter">
+						<div class="button-structure">
+							<div id="size-button" >
+								<img src="../images/design/icons/arrow-down.png" class="col-sm-3">
+								<span class="col-sm-8 paddingZero">SIZE</span>
+							</div>
+							<span class="x-exit col-sm-1 paddingZero" id="exit2">x</span>
+						</div>
+						<div class="size">
+							<div class="container row">
+								<div class="size-option col-sm-3">S</div>
+								<div class="size-option col-sm-3 active">M</div>
+								<div class="size-option col-sm-3">L</div>
+								<div class="size-option col-sm-3">XL</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="col-sm-8 col-md-9">
+					<div class="row" id="list-of-products">
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image1.png">
+								<span class="product-title">Essential cotton-blend</span>
+								<div class="product-price">
+									<span class="old">$200.00 USD</span>
+									<span class="new">$100.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image2.png">
+								<span class="product-title">Flacked cotton-blend</span>
+								<div class="product-price">
+									<span class="new">$175.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image3.png">
+								<span class="product-title">Striped cotton t-shirt</span>
+								<div class="product-price">
+									<span class="new">$200.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image4.png">
+								<span class="product-title">Sequin start t-shirt</span>
+								<div class="product-price">
+									<span class="old">$200.00 USD</span>
+									<span class="new">$100.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image5.png">
+								<span class="product-title">Ruffle sleeve t-shirt</span>
+								<div class="product-price">
+									<span class="new">$175.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image6.png">
+								<span class="product-title">Double layer top</span>
+								<div class="product-price">
+									<span class="new">$200.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image7.png">
+								<span class="product-title">V-neck cotton t-shirt</span>
+								<div class="product-price">
+									<span class="new">$100.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image8.png">
+								<span class="product-title">Message cotton t-shirt</span>
+								<div class="product-price">
+									<span class="new">$100.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-sm-6 col-md-4">
+							<div class="product-block">
+								<img src="../images/products/image1.png">
+								<span class="product-title">Essential cotton-blend</span>
+								<div class="product-price">
+									<span class="old">$200.00 USD</span>
+									<span class="new">$100.00 USD</span>
+								</div>
+								<div class="product-buttons">
+									<div class="count-block">
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
+									</div>
+									<div class="add-to-cart">+ Add To Cart</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="pagination-bar row paddingZero">
+				<div class="previous"><a href="#"><</a></div>
+			 	<div class="pagination">
+				    <div class="page-item"><a href="#">1</a></div>
+				    <div class="page-item"><a href="#">2</a></div>
+				    <div class="page-item"><a href="#">3</a></div>
+				    <div class="page-item"><a href="#">4</a></div>
+				    <div class="page-item"><a href="#">5</a></div>
+			 	</div>
+			 	<div class="next"><a href="#">></a></div>
+			</section>
+		</main>
+		<section id="banner-bottom" class="container-fluid">
+				<div class="banner-bottom-text col-sm-4 align-middle">
+					<span>NEW PRODUCT</span>
+					<span>The new Collection of Summer</span>
+				</div>
+		</section>
+		<section class="logo-block container">
+			<div class="row">
+				<div class="logo-item col-sm-6 col-md-3">
+					<img src="../images/design/icons/logotype1.png" alt="logotype">
+				</div>
+				<div class="logo-item col-sm-6 col-md-3">
+					<img src="../images/design/icons/logotype2.png" alt="logotype">
+				</div>
+				<div class="logo-item col-sm-6 col-md-3">
+					<img src="../images/design/icons/logotype3.png" alt="logotype">
+				</div>
+				<div class="logo-item col-sm-6 col-md-3">
+					<img src="../images/design/icons/logotype4.png" alt="logotype">
+				</div>
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<div class="container d-md-flex d-sm-column col-sm-8 col-md-10">
+				<div class="footer-column col-sm-6 col-md-3">
+					<div class="column-inside">
+						<img src="../images/design/icons/ModaX Logo.png">
+					</div>
+					<div class="column-inside">
+						<img src="../images/design/icons/social-icons.png">
+					</div>
+				</div>
+				<div class="footer-column col-md-5">
+					<div class="column-inside">
+						<ul class="footer-text col-12 d-flex paddingZero">
+							<li>MAN</li>
+							<li>WOMAN</li>
+							<li>LOOKBOOK</li>
+							<li>SALE</li>
+							<li>BLOG</li>
+						</ul>
+					</div>
+					<div class="column-inside">
+						<span>SUBSCRIBE TO NEWS</span>
+						<form>
+							<input type="text" name="name" value="Email ADRESS" class="col-12 col-sm-7">
+							<input type="submit" value="SUBMIT" class="col-12 col-sm-4">
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-9 col-md-4">
+					<div class="column-inside col-8 ">
+						<span class="footer-text">CONTACT US</span>
+					</div>
+					<div class="column-inside footer-text col-10">
+						<span>San Francisco,California 400 Castro St.San Francisco,CA</span>
+						<span>(+1)686-868-9999</span>
+					</div>
+					<div class="column-inside pay-method d-block col-12">
+						<img src="../images/design/icons/pay-method1.png">
+						<img src="../images/design/icons/pay-method2.png">
+						<img src="../images/design/icons/pay-method3.png">
+						<img src="../images/design/icons/pay-method4.png">
+						<img src="../images/design/icons/pay-method5.png">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="../script/script.js"></script>
+</html>
